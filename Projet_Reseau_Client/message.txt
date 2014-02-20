@@ -1,0 +1,27 @@
+Message client -> serveur
+
+message type 1: 1er train apres une heure
+
+	1#Grenoble#lyon#15:30;
+
+message type 2:tous trains entre 2 horraires
+
+	2#grenoble#lyon#15h00#16h00;
+
+message type 3:trajet au meilleur prix
+
+        3#grenoble#lyon
+
+message type 4 : trajet durée opti
+
+        4#grenoble#lyon
+
+	
+Message serveur -> client
+
+	BEGIN
+	1#Grenoble#Marseille#20:30#22:00#15.12#REDUC;
+	2#Paris#Lyon#07:00#09:30#20.05#SUPPL;
+	3#Toulouse#Grenoble#02:05#03:15#85.65#;
+	4#Grenoble#Strasbourg#21:00#23:50#51.21#SUPPL;
+	END
